@@ -7,10 +7,18 @@ import './style.css';
 
 const App = () => {
   return (
-    <>
+    <Router>
       <Header />
+      <Switch>
+        <Route path="/reservation">
+          <h2>Reservation</h2>
+        </Route>
+        <Route path="/">
+          <h2>Home</h2>
+        </Route>
+      </Switch>
       <Footer />
-    </>
+    </Router>
   );
 };
 
